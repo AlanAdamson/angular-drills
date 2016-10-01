@@ -4,7 +4,7 @@
 	</head>
 	<body ng-controller="arrayController">
   {{test}}
-<input class="form-control" placeholder="Search Data" ng-model="personFilter">
+  <input class="form-control" placeholder="Search Data" ng-model="personFilter">
     <div ng-repeat="person in getData| filter: personFilter">
       <p>
         <span>{{person.name}}</span>

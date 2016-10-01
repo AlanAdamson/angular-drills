@@ -1,6 +1,21 @@
 <html ng-app="apiApp">
-	<body>
-		
+	<body ng-controller="aController">
+
+    <!-- {{test}} -->
+
+    <span ng-init="getApi()"></span>
+
+    {{apiData}}
+
+    <div ng-repeat="smurf in apiData">
+      <p>
+        <span>{{smurf.first_name}} <img src='{{smurf.avatar}}'</span>
+        <span>{{smurf.email}}</span>
+        <span>{{smurf.dateEmployed}}</span>
+        <span>{{smurf.phone}}</span>
+      </p>
+    </div>
+
 				<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>
